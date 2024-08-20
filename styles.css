@@ -22,6 +22,15 @@ overflow-wrap: break-word;
 isolation: isolate;
 }
 
+html {  
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    display: flex;
+}
+
 :root {
     --button_color: #596D48;
     --input_border_color: #E5E7EB;
@@ -37,7 +46,33 @@ isolation: isolate;
 
 .container {
     display: flex;
-    justify-content: space-around;
+}
+
+.image {
+    position: relative;
+}
+
+
+.container .image {
+    min-height: 120vh;
+    min-width: 40em;
+    background-image: url("images/leaf.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image .logo {
+    width: 100%;
+    min-height: 300px;
+    position: absolute;
+    top: 15em;
+    background-color: rgb(0,0,0, 0.7);
+}
+
+.container .login {
+    flex: 1;    
 }
 
 
