@@ -129,3 +129,41 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+.login .foot {
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px;
+    padding-top: 64px;
+    gap: 24px;
+}
+
+.foot button[type="submit"] {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    border: 1px var(--button_color) solid;
+    border-radius: 8px;
+    color: var(--input_border_color);
+    /* border-radius: 2%; */
+    background-color: var(--button_color);
+    font-weight: 700;
+    font-size: 24px;
+    max-width: 250px;
+    min-height: 56px;
+    box-shadow: 4px 4px 4px rgb(0, 0, 0, 0.2);
+}
+
+.foot button[type="submit"]:hover {
+    cursor: pointer;
+}
+
+
