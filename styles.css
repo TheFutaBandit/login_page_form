@@ -177,9 +177,50 @@ fieldset input[type="text"],
 fieldset input[type="number"],
 fieldset input[type="email"],
 fieldset input[type="password"] {
+    border: 1px var(--input_border_color) solid;
     margin-top: 2px;
     min-width:280px;
+    border-radius: 4px;
+    padding-left: 7px;
 }
+
+fieldset input[type="text"]:focus,
+fieldset input[type="number"]:focus,
+fieldset input[type="email"]:focus,
+fieldset input[type="password"]:focus {
+    border-color: blue;
+    box-shadow: 2px 2px 5px rgb(0,0,0,0.4);
+    outline:none;
+}
+
+fieldset input[type="text"]:invalid,
+fieldset input[type="number"]:invalid,
+fieldset input[type="email"]:invalid,
+fieldset input[type="password"]:invalid {
+    border-color: red;
+    outline:none;
+}
+
+#error_message {
+    font-size: 14px;
+    color: red;
+    display: none;
+}
+
+fieldset .user_passwords input[type="password"]:invalid + #error_message {
+    display: block;
+}
+
+fieldset .user_passwords input[type="password"]:valid + #error_message {
+    display: none;
+}
+
+
+
+
+
+
+
 
 
 
