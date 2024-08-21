@@ -89,10 +89,43 @@ body {
     /* object-fit: cover; */
 }
 
-
-
 .container .login {
-    flex: 1;    
+    flex: 1; 
+    display: flex;
+    flex-direction: column;  
+    background-color: #f9fafb;
+}
+
+.login > * {
+    flex: 1;
+    /* border: 1px solid red; */
+}
+
+.login .login_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.3);
+}
+
+.login .head {
+    letter-spacing: 0.7;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-left: 48px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    justify-content: flex-end;
+    gap: 24px;
+    padding-bottom: 64px;
+}
+
+.head p {
+    max-width: 800px;
+    line-height: 1.1;
 }
 
 
